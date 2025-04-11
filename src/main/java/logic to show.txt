@@ -1,0 +1,14 @@
+
+    String ingredients = result.getString("Ingredients");
+                        String instructions = result.getString("instructions");
+                        String imagepath = result.getString("imagePath");
+                        String nutritionalinfo = result.getString("nutritional");
+                        String source = result.getString("Recipe source");
+                        String description = result.getString("Recipe Description");
+                        String preptime = result.getString("Preparation time");
+
+
+RecipeDetails detailsWindow =  new RecipeDetails(recipename, ingredients, instructions,  imagepath, nutritionalinfo, source, description, preptime, cooktime, category);
+                        Stage detailssStage = new Stage();
+            
+                        detailsWindow.start(detailssStage);

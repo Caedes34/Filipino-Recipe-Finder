@@ -1,0 +1,33 @@
+/* categories.css */
+
+.categoriesRoot {
+  -fx-background-color: #fdfdfd;
+}
+
+.backButton {
+  -fx-font-size: 13px;
+  -fx-background-color: #f0f0f0;
+  -fx-border-color: #ccc;
+  -fx-text-fill: #333;
+  -fx-padding: 8 14;
+  -fx-background-radius: 10;
+  -fx-cursor: hand;
+}
+
+.backButton:hover {
+  -fx-background-color: #e0e0e0;
+}
+
+.category-button {
+  -fx-background-color: white;
+  -fx-border-color: #ddd;
+  -fx-background-radius: 8;
+  -fx-padding: 10;
+  -fx-cursor: hand;
+  -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.05), 5, 0, 2, 2);
+}
+
+.category-button:hover {
+  -fx-background-color: #f9f9f9;
+  -fx-border-color: #bbb;
+}

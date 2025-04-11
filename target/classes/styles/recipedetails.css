@@ -1,0 +1,34 @@
+.backButton {
+  -fx-background-color: none; /* Green */
+  -fx-text-fill: black;
+  -fx-padding: 10px 20px;
+  -fx-font-size: 13px;
+  -fx-border-radius: 5px;
+  -fx-border-color: black;
+  -fx-background-radius: 5px;
+}
+
+.searchButton {
+  -fx-background-color: none; /* Green */
+  -fx-text-fill: black;
+  -fx-padding: 10px 20px;
+  -fx-font-size: 13px;
+  -fx-border-radius: 5px;
+  -fx-border-color: black;
+  -fx-background-radius: 5px;
+}
+
+.descriptionLabel {
+  -fx-wrap-text: true; /* Enables text wrapping within the label */
+  -fx-max-width: 900px; /* Set the maximum width for the label */
+  -fx-text-fill: #333; /* Optional: Set text color */
+  -fx-font-size: 14px; /* Optional: Set font size */
+  -fx-padding: 10px; /* Optional: Add padding for better spacing */
+}
+.metadata {
+  -fx-padding: 0 40px 0 0; /* Top, Right, Bottom, Left */
+}
+
+.ingredientsBox {
+  -fx-border-color: yellow;
+}

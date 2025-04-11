@@ -1,0 +1,89 @@
+.root {
+  -fx-background-color: #f4f4f4;
+}
+
+.title {
+  -fx-font-family: "Josefin Sans";
+  -fx-font-size: 18px;
+  -fx-text-fill: black;
+  -fx-font-weight: bold;
+}
+.subtitle {
+  -fx-text-fill: grey;
+}
+
+.button {
+  -fx-background-color: white;
+  -fx-border-color: none;
+  -fx-text-fill: black;
+  -fx-font-weight: bold;
+  -fx-border-radius: 5px;
+  -fx-border: none;
+  -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 10, 0, 3, 3);
+}
+.searchbutton {
+  -fx-background-color: black;
+  -fx-text-fill: white;
+  -fx-font-weight: bold;
+  -fx-border-radius: 5px;
+  -fx-border: none;
+  -fx-cursor: hand;
+}
+
+.search-toggle {
+  -fx-background-color: white;
+  -fx-text-fill: black;
+  -fx-border-radius: 10px;
+  -fx-border: none;
+  -fx-font-weight: bold;
+}
+
+.toggle-container {
+  -fx-border-color: #ccc;
+  -fx-border-width: 1px;
+  -fx-border-radius: 10px;
+  -fx-padding: 1px;
+  -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 10, 0, 3, 3);
+}
+
+/* 
+//box thing */
+.slider {
+  fill: white;
+  -fx-fill: white;
+  -fx-arc-width: 10px;
+  -fx-arc-height: 5px;
+  -fx-border-radius: 10px;
+}
+
+.search-toggle {
+  -fx-background-color: white;
+  -fx-text-fill: black;
+  -fx-font-size: 14px;
+  -fx-padding: 2px 10px;
+  -fx-border: black;
+}
+
+.search-toggle:selected {
+  -fx-scale-x: 1;
+  -fx-scale-y: 1;
+}
+
+.search-toggle:hover {
+  -fs-opacity: 0.8;
+  -fx-cursor: hand;
+}
+
+.searchField {
+  -fx-font-weight: bold;
+  -fx-border-radius: 5px;
+  -fx-border: none;
+}
+.popularcontainer {
+  -fx-border-color: #ccc;
+  -fx-border-radius: 5px;
+}
+.popularlabel {
+  -fx-font-weight: 5px;
+  -fx-text-fill: grey;
+}

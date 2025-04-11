@@ -1,0 +1,47 @@
+
+//select based on category only
+private void searchRecipe(){
+        String recipeName = searchField.getText().trim();
+        if (recipeName.isEmpty()) {
+            showAlert("Input Error", "Please enter the name of the recipe.");
+            return;
+        }
+
+                String url = "jdbc:sqlite:C:/Program Projects/RECIPE FINDER JAVA PROGJECT/my datas.db";
+                String sql = "SELECT * FROM recipeDB WHERE \"Recipe Name\" LIKE ?"; 
+                   
+            
+                   try (Connection connection = DriverManager.getConnection(url);
+                     PreparedStatement statement = connection.prepareStatement(sql)){
+                    
+                     statement.setString(1, "%" + recipeName + "%");
+                     ResultSet result = statement.executeQuery();
+
+
+                     if (result.next()) {
+
+                        String name = result.getString("Recipe Name");
+                        String ingredients = result.getString("Ingredients");
+                        String instructions = result.getString("Instructions");
+
+
+                        System.out.println("Name: " + name + ", Ingredients: " + ingredients + ", Instructions: " + instructions);
+                     }else{
+                        showAlert("Database error", "an error occured while searching");
+                     }
+
+    
+                  } catch (SQLException e) {
+
+                     System.out.println("Error sql database");
+                     e.printStackTrace();
+                     
+            }     
+    }
+
+
+
+
+
+select only all recipe names
+ String sql = "SELECT \"Recipe Name\" FROM recipeDB"; // Select only Recipe Name column
