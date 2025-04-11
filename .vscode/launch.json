@@ -1,0 +1,35 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "prototype",
+      "request": "launch",
+      "mainClass": "com.filipinofinder.prototype",
+      "projectName": "recipe-finder"
+    },
+    {
+      "type": "java",
+      "name": "RecipeDetails",
+      "request": "launch",
+      "mainClass": "com.filipinofinder.RecipeDetails",
+      "projectName": "recipe-finder",
+      "vmArgs": "--module-path \"C:\\JavaFX\\lib\" --add-modules javafx.controls,javafx.fxml"
+    },
+    {
+      "type": "java",
+      "name": "Databasehelper",
+      "request": "launch",
+      "mainClass": "com.filipinofinder.Databasehelper",
+      "projectName": "recipe-finder"
+    },
+    {
+      "type": "java",
+      "name": "filipinorecipefinder",
+      "request": "launch",
+      "mainClass": "com.filipinofinder.filipinorecipefinder",
+      "projectName": "recipe-finder",
+      "vmArgs": "--module-path \"C:\\JavaFX\\lib\" --add-modules javafx.controls,javafx.fxml"
+    }
+  ]
+}

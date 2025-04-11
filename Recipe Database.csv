@@ -1,0 +1,130 @@
+Recipe id,Recipe Name,Ingredients,instructions,Category,Preparation Time,Cooking Time,Image PATH,Recipe Description,Recipe source,Nutrional information
+1,Filipino Chicken Adobo,"2 lbs chicken 
+
+3 pieces dried bay leaves 
+
+4 tablespoons soy sauce
+
+6 tablespoons white vinegar
+
+5 cloves garlic  
+
+1 1/2 cups water
+
+3 tablespoons cooking oil
+
+1 teaspoon sugar
+
+1/4 teaspoon salt
+
+1 teaspoon whole peppercorn","1. Combine 2 lbs of chicken, 4 tablespoons of soy sauce, and garlic in a large bowl. Mix well. Marinate the chicken for at least 1 hour. Note: The longer the marination, the better the flavor.
+
+
+
+2. Heat a cooking pot and pour in 3 tablespoons of cooking oil.
+
+3. Pan-fry the marinated chicken for 2 minutes per side, until golden brown.
+
+
+4. Pour in the remaining marinade, including garlic. Add 1 ½ cups of water. Bring to a boil.
+
+5. Add 3 pieces of dried bay leaves and 1 teaspoon of whole peppercorn. Simmer for 30 minutes or until the chicken becomes tender.
+
+
+6. Add 6 tablespoons of white vinegar. Stir and cook for 10 minutes.
+
+7. Add 1 teaspoon of sugar and ¼ teaspoon of salt. Stir well and turn off the heat. Serve hot and enjoy!",Main Dish,"15 minutes	",30 minutes,C:\Program Projects\RECIPE FINDER JAVA PROGJECT\src\main\resources\com\Databaseimages\[name of the image].FORMAT,"Chicken Adobo is an authentic Filipino dish and is one of the mostly recognized Filipino foods. Not to be mistaken with Mexican adobo, this dish is uniquely prepared by stewing chicken in vinegar and soy sauce.",https://panlasangpinoy.com/filipino-chicken-adobo-recipe/,"Calories: 607kcal (30%) 
+
+Carbohydrates: 4g (1%)
+ 
+Protein: 44g (88%)
+
+Fat: 44g (68%)
+
+Saturated Fat: 10g (50%) 
+
+Cholesterol: 170mg (57%) 
+
+Sodium: 1317mg (55%) 
+
+Potassium: 496mg (14%)
+
+Sugar: 1g (1%) 
+
+Vitamin A: 365IU (7%)
+Vitamin C: 5.1mg (6%)
+Calcium: 50mg (5%) 
+
+Iron: 3mg (17%)"
+2,Chicken Caldereta,"2 lbs chicken, cut into pieces
+
+1 piece Knorr Chicken Cube
+
+2 pieces carrots, wedged
+
+2 pieces potato, cubed
+
+8 ounces tomato sauce
+
+2 pieces bell pepper, sliced
+
+4 tablespoons liver spread
+
+1 piece tomato, cubed
+
+3 pieces chili pepper, chopped
+
+1 piece onion, chopped
+
+3 cloves garlic, crushed
+
+3 tablespoons cheddar cheese, grated
+
+1 ½ cups water
+
+4 tablespoons cooking oil","1. Start by pan-frying the potato and carrots. Heat oil in a pan. Add the potato. Fry each side for 1 minute. Remove from the pan and put in a bowl lined with a paper towel. Set aside.
+
+2. Do the same thing with the carrots.
+
+3. Using the remaining oil, fry the chicken for 1 ½ minutes per side. Remove from the pan and set aside.
+
+4. Sauté onion and garlic. Add tomato. Continue to sauté while stirring until the tomato and onion soften.
+
+5. Add the chicken and pour in tomato sauce and water. Let it boil.
+
+6. Stir and then add the Knorr Chicken Cube and chili pepper. Cover the pan. Cook over low to medium heat for 15 minutes.
+
+7. Turn the chicken pieces over to cook the opposite side evenly. Add liver spread. Stir. Cover and cook for 20 minutes.
+
+8. Add bell peppers and cheese. Cook for 3 minutes.
+
+9. Put the carrots and potatoes into the pan. Continue to cook for 5 to 7 minutes.
+
+10. Season with salt and ground black pepper. Serve. Share and enjoy.
+",Chicken,10 minutes,55 minutes,C:\Program Projects\RECIPE FINDER JAVA PROGJECT\src\main\resources\com\Databaseimages\Chicken_caldereta.jpeg,Chicken Caldereta is a type of Filipino chicken stew. This version involves cooking the chicken in a tomato-based sauce. I also add a good amount of liver spread to make the sauce more flavorful.,https://panlasangpinoy.com/chicken-caldereta/," Calories: 714kcal (36%)
+
+ Carbohydrates: 9g (3%)
+
+ Protein: 50g (100%)
+
+ Fat: 53g (82%)
+
+ Saturated Fat: 13g (65%)
+
+ Cholesterol: 223mg (74%)
+
+ Sodium: 783mg (33%)
+
+ Potassium: 796mg (23%)
+
+ Fiber: 2g (8%)
+
+ Sugar: 5g (6%)
+
+ Vitamin A: 3530IU (71%)
+
+ Vitamin C: 16mg (19%)
+
+ Calcium: 130mg (13%)
+
+ Iron: 4mg (22%)"
