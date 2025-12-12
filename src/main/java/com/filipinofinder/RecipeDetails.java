@@ -93,9 +93,9 @@ public class RecipeDetails extends Application {
         Label description = new Label(this.description);
         description.getStyleClass().add("descriptionLabel");
 
-        Label timeLabel = new Label("⏳Cooking Time: " + cooktime);
-        Label servingsLabel = new Label("🍽️Prep Time: " + preptime );
-        Label cuisineLabel = new Label("🌍Category: " + category);
+        Label timeLabel = new Label("\u23F0Cooking Time: " + cooktime);
+        Label servingsLabel = new Label("\uD83C\uDF74Prep Time: " + preptime );
+        Label cuisineLabel = new Label("\u2615Category: " + category);
        
         //button for the source tab
      

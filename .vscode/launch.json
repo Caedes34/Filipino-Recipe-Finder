@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Categories",
+      "request": "launch",
+      "mainClass": "com.filipinofinder.Categories",
+      "projectName": "recipe-finder"
+    },
+    {
+      "type": "java",
       "name": "prototype",
       "request": "launch",
       "mainClass": "com.filipinofinder.prototype",

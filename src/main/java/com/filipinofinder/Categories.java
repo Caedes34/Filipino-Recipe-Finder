@@ -4,6 +4,8 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.sound.midi.VoiceStatus;
+
 import javafx.application.Application;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
@@ -17,12 +19,13 @@ import javafx.stage.Stage;
 public class Categories extends Application {
     @Override
     public void start(Stage primaryStage) {
-        // Window Icon
+        
+        // Set the icon for the window
         Image icon = new Image(getClass().getResourceAsStream("/com/images/icon.png"));
         primaryStage.getIcons().add(icon);
 
-        // Title
-        Label title = new Label("🍽️ Explore Categories");
+        // EXPLORE CATEGORIES TITLE
+        Label title = new Label("\uD83C\uDF74Explore Categories");
         title.setStyle("-fx-font-size: 28px; -fx-font-weight: bold;");
         title.setPadding(new Insets(10, 0, 0, 0));
 
@@ -30,9 +33,13 @@ public class Categories extends Application {
         Label subtitle = new Label("Find delicious Filipino recipes by category");
         subtitle.setStyle("-fx-font-size: 14px; -fx-text-fill: #666;");
 
+
+
         // Back Button
         Button backButton = new Button("← Go Back");
         backButton.getStyleClass().add("backButton");
+        //BACK BUTTON LOGIC
+        // when pressed it goes to the filipinorecipefinder class 
         backButton.setOnAction(e -> {
             filipinorecipefinder finder = new filipinorecipefinder();
             Stage newStage = new Stage();
@@ -40,48 +47,84 @@ public class Categories extends Application {
             ((Stage) ((Button) e.getSource()).getScene().getWindow()).close();
         });
 
-        // Category Buttons
+        //back button container
+        HBox topbar = new HBox(backButton);
+        topbar.setAlignment(Pos.CENTER_LEFT);
+        topbar.setPadding(new Insets(10, 0, 0, 10));
+
+       //category vertical container 
+      VBox categoriesBox1 = new VBox(10,
+      createCategoryButton("Adobo", "chicken_adobo.jpg"),
+      createCategoryButton("Bread", "Banana Bread with Raisins.jpg")
+      );
+
+         //category vertical container 
+      VBox categoriesBox2 = new VBox(10,
+      createCategoryButton("Chicken", "Pineapple Fried Chicken.jpg"),
+      createCategoryButton("Kaldereta", "Ground Pork Kaldereta Omelet.jpg")
+      );
+
+         //category vertical container 
+      VBox categoriesBox3 = new VBox(10,
+      createCategoryButton("Ginataan", "Ginataang-Bitsuelas.jpg"),
+      createCategoryButton("Kilawin", "Kinilaw-na-Tanigue.jpg")
+      );
+
+        
+
+        // Category containers place horizontally
         HBox categoriesBox = new HBox(20,
-            createCategoryButton("Adobo", "chicken_adobo.jpg"),
-            createCategoryButton("Bread", "Banana Bread with Raisins.jpg"),
-            createCategoryButton("Ginataan", "Ginataang-Bitsuelas.jpg"),
-            createCategoryButton("Chicken", "Pineapple Fried Chicken.jpg"),
-            createCategoryButton("Kaldereta", "Ground Pork Kaldereta Omelet.jpg")
+            
+            categoriesBox1,
+            categoriesBox2,
+            categoriesBox3
         );
         categoriesBox.setAlignment(Pos.CENTER);
         categoriesBox.setPadding(new Insets(20));
 
-        // Layout
+        // Layout of the whole page
         VBox root = new VBox(15,
-            backButton,
+            topbar,
             title,
             subtitle,
             categoriesBox
         );
         root.setAlignment(Pos.TOP_CENTER);
-        root.setPadding(new Insets(25));
+        root.setPadding(new Insets(10));
         root.getStyleClass().add("categoriesRoot");
 
-        // Scene Setup
-        Scene scene = new Scene(root, 800, 450);
+        // window height and width
+        Scene scene = new Scene(root, 900, 700);
+        //connect css file
         scene.getStylesheets().add(getClass().getResource("/styles/categories.css").toExternalForm());
 
+        //title for the Window
         primaryStage.setTitle("Categories");
         primaryStage.setScene(scene);
         primaryStage.setResizable(false);
         primaryStage.show();
     }
 
+
+    //logic for the category buttons
+    //when pressed it will search the database for the category name and show the results
+    //and close the current window
+
     private Button createCategoryButton(String categoryName, String imagePath) {
         Image image = new Image(getClass().getResource("/com/images/" + imagePath).toExternalForm());
         ImageView imageView = new ImageView(image);
-        imageView.setFitWidth(100);
-        imageView.setFitHeight(100);
+        imageView.setFitWidth(190);
+        imageView.setFitHeight(190);
 
+        //category buttons
         Button button = new Button(categoryName, imageView);
         button.setContentDisplay(ContentDisplay.TOP);
         button.setStyle("-fx-font-size: 13px; -fx-font-weight: bold;");
         button.getStyleClass().add("category-button");
+
+        //category buttons logic
+        //when pressed it will search the database for the category name and show the results
+        //and close the current window
 
         button.setOnAction(e -> {
             searchDish(categoryName);
@@ -91,6 +134,8 @@ public class Categories extends Application {
         });
         return button;
     }
+    //search dish logic
+    //the logic responsible for fetching recipes based on category
 
     private void searchDish(String categoryName) {
         String url = "jdbc:sqlite:C:/Program Projects/RECIPE FINDER JAVA PROGJECT/my datas.db";
@@ -130,14 +175,19 @@ public class Categories extends Application {
             e.printStackTrace();
         }
     }
-
+    /// Show results page with the fetched recipes
+    /// This method creates a new stage and displays the results using the Resultspage class.
+    /// It passes the list of recipes to the Resultspage class for rendering.
     private void showResultsPage(List<Recipe> recipes) {
         Resultspage resultsPage = new Resultspage(recipes);
         Stage resultsStage = new Stage();
         resultsPage.start(resultsStage);
         
     }
-
+    /// Show an alert dialog with a title and message
+    /// This method creates an alert dialog with the specified title and message.
+    /// It is used to inform the user about the results of their actions.
+    /// 
     private void showAlert(String title, String message) {
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         alert.setTitle(title);

@@ -34,6 +34,7 @@ public class filipinorecipefinder extends Application {
 
     @Override
     public void start(Stage primaryStage) {
+        //icon  
         Image icon = new Image(getClass().getResourceAsStream("/com/images/icon.png"));
         primaryStage.getIcons().add(icon);    
     
@@ -78,7 +79,9 @@ public class filipinorecipefinder extends Application {
         searchByCategory.getStyleClass().add("search-toggle");
         
         
-       
+       //set the default selected button
+       ///container of surprise me button and category
+       /// 
         HBox toggleBox = new HBox(20, searchByCategory, searchBysurprise);
         toggleBox.setAlignment(Pos.CENTER);
         toggleBox.setPadding(new Insets(10, 10, 10, 80));
@@ -87,7 +90,7 @@ public class filipinorecipefinder extends Application {
         toggleBox.getStyleClass().add("toggle-container");
 
         
-    
+        //search prompt label
         label1 = new Label("Enter Dish name or ingredients(eg., Adobo, Sinigang, Pancit, Fried Chicken, salt, flour): ");
         label1.setStyle("-fx-font-size: 10px; -fx-font-weight: bold;");
         searchField = new TextField();
@@ -97,17 +100,16 @@ public class filipinorecipefinder extends Application {
 
         searchField.getStyleClass().add("searchField");
 
-
+        //search button
         Button searchButton = new Button("🔍 Search");
-
         searchButton.setPrefWidth(100);
         searchButton.setMaxWidth(Double.MAX_VALUE);
 
 
-        // searc
+        // search button class
         searchButton.getStyleClass().add("searchbutton");
         
-
+        //container for label, searchfield, searchbutton
         HBox searchBox = new HBox(10,label1 ,searchField, searchButton);
         //top,right,bottom,left
         searchBox.setPadding(new Insets(1, 10, 10, 10));
@@ -119,11 +121,11 @@ public class filipinorecipefinder extends Application {
         popularLabel.getStyleClass().add("popularlabel");
         HBox popularSearches = new HBox(10,
             new Button("Adobo"),
-            new Button("Sinigang"),
-            new Button("Pancit"),
-            new Button("Lumpia"),
-            new Button("Kare-kare"),
-            new Button("Lechon")
+            new Button("Tinapay"),
+            new Button("Ginataan"),
+            new Button("Chicken"),
+            new Button("Pork"),
+            new Button("Milk")
         );
 
         VBox popularContainer = new VBox(5, popularLabel,popularSearches);
