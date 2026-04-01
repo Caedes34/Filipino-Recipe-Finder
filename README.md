@@ -75,5 +75,5 @@ This project highlights my ability to:
 
 ![Filipino Recipe Finder](Screenshot/Home.png)
 ![Filipino Recipe Finder](Screenshot/Keyword.png)
-![Filipino Recipe Finder](Screenshot/Surprise.png)
+![Filipino Recipe Finder](Screenshot/Suprise.png)
 ---
