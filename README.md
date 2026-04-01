@@ -70,5 +70,8 @@ This project highlights my ability to:
 * Work independently on a complete application
 * Manage time under pressure
 * Apply programming fundamentals in a real-world scenario
+* 
+## Screenshots
 
+![Filipino Recipe Finder](Screenshot/home.png)
 ---
