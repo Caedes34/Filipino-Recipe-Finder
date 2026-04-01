@@ -1,18 +1,74 @@
-## Getting Started
+# 🇵🇭 Filipino Recipe Finder
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+A simple desktop application built using Java and SQLite that allows users to browse and search for Filipino recipes.
 
-## Folder Structure
+This project was developed as an academic requirement and demonstrates fundamental concepts in programming, data handling, and application development.
 
-The workspace contains two folders by default, where:
+---
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+## 📌 Features
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+* 🔍 Search for Filipino recipes by name
+* 📋 View recipe details (ingredients, instructions)
+* 💾 Local data storage using SQLite
+* 🖥️ Basic graphical user interface (GUI) for navigation
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+---
 
-## Dependency Management
+## 🛠️ Technologies Used
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+* Java (Core Java / Swing for GUI)
+* SQLite (local database)
+* JDBC (Java Database Connectivity)
+
+---
+
+## 🎯 Purpose
+
+The goal of this project was to:
+
+* Practice building a complete application from scratch
+* Understand how to connect a Java application to a database
+* Implement search functionality using structured data
+* Apply basic UI/UX principles
+
+---
+
+## ⚠️ Project Status
+
+🚧 This project is **unfinished** and was developed under a tight academic deadline.
+
+* The GUI design is minimal and follows a basic layout
+* Some features may be incomplete or unoptimized
+* Future improvements can include better UI design and additional functionality
+
+---
+
+## 🚀 Possible Improvements
+
+* Improve user interface (modern design / better UX)
+* Add filtering (by ingredients, category, cooking time)
+* Enhance search functionality
+* Add recipe images
+* Convert into a web-based application
+
+---
+
+## 👨‍💻 Author
+
+**Rafael Luaña**
+
+* Aspiring Developer & Technical Support Specialist
+* Currently improving skills in web development and programming
+
+---
+
+## 📄 Notes
+
+This project highlights my ability to:
+
+* Work independently on a complete application
+* Manage time under pressure
+* Apply programming fundamentals in a real-world scenario
+
+---
