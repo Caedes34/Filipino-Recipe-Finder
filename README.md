@@ -74,6 +74,6 @@ This project highlights my ability to:
 ## Screenshots
 
 ![Filipino Recipe Finder](Screenshot/Home.png)
-(Screenshot/Keyword.png)
-(Screenshot/Surprise.png)
+![Filipino Recipe Finder](Screenshot/Keyword.png)
+![Filipino Recipe Finder](Screenshot/Surprise.png)
 ---
